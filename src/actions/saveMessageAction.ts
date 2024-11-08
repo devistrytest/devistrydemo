@@ -1,6 +1,7 @@
 "use server";
 
 import prisma from "@/lib/prisma";
+import { revalidatePath } from "next/cache";
 
 interface saveMessageActionParams {
   message: string;
@@ -20,6 +21,8 @@ export default async function saveMessageAction({
       text: message,
     },
   });
+
+  revalidatePath("/");
 
   return {
     success: true,
