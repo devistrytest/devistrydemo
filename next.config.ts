@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
     serverActions: {
-      allowedOrigins: ["devistrydemo.devistrytest.com"],
+      allowedOrigins: ["your IP/domain here"],
     },
   },
 };
