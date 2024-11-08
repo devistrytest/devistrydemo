@@ -28,7 +28,7 @@ export default function AddMessage() {
         placeholder="Enter a message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="block mb-4 border border-black rounded-md p-2 w-full resize-none max-w-[400px] h-[200px]"
+        className="block mb-4 border border-black rounded-md p-2 w-full resize-none max-w-[400px]"
       />
       <button
         type="submit"
