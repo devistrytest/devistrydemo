@@ -23,12 +23,13 @@ export default function AddMessage() {
 
   return (
     <form onSubmit={onSubmit}>
-      <textarea
+      <input
+        type="text"
         placeholder="Enter a message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         className="block mb-4 border border-black rounded-md p-2 w-full resize-none max-w-[400px] h-[200px]"
-      ></textarea>
+      />
       <button
         type="submit"
         className="block p-2 text-white bg-black rounded-md"
