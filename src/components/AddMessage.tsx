@@ -17,8 +17,6 @@ export default function AddMessage() {
       alert(result.message);
       return;
     }
-
-    location.reload();
   }
 
   return (
