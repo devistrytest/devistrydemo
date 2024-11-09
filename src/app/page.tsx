@@ -6,9 +6,14 @@ export default async function Home() {
 
   return (
     <main>
+      <h1 className="text-4xl my-8">Messages demo</h1>
       <div className="my-8">
         {messages.map((message) => {
-          return <p key={message.id}>{message.text}</p>;
+          return (
+            <p key={message.id} className="my-2">
+              {message.text}
+            </p>
+          );
         })}
       </div>
       <AddMessage />
