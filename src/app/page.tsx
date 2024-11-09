@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
     <main>
-      <h1 className="text-4xl my-8">Messages demo</h1>
+      <h1 className="text-4xl my-8">Messages app</h1>
       <div className="my-8">
         {messages.map((message) => {
           return (
